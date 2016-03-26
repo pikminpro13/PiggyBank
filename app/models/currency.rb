@@ -1,3 +1,3 @@
 class Currency < ActiveRecord::Base
-  attr_accessible :country, :denomination, :name, :type, :year
+  attr_accessible :country, :denomination, :name, :currency_type, :year
 end

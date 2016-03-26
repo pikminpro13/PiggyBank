@@ -1,6 +1,6 @@
 PiggyBankRedux::Application.routes.draw do
-  root to: "currency#index"
   resource :currencies
+  root to: "currencies#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

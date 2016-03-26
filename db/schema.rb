@@ -11,16 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20160305174246) do
+ActiveRecord::Schema.define(:version => 20160326162101) do
 
   create_table "currencies", :force => true do |t|
     t.string   "name"
-    t.string   "type"
+    t.string   "currency_type"
     t.float    "denomination"
     t.string   "country"
     t.integer  "year"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
 end
