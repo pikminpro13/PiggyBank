@@ -1,8 +1,13 @@
 <h1> Bleh </h1>
-<table>
+<table border=true>
   <% @currencies.each do |currency|%>
     <tr>
       <td><%= currency.name %></td>
+      <td><%= currency.currency_type %></td>
+      <td><%= currency.denomination %></td>
+      <td><%= currency.country %></td>
+      <td><%= currency.year %></td>
     </tr>
   <% end %>
 </table>
+<%= link_to "NEW ONE", new_currencies_path%>
